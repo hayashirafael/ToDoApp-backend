@@ -9,5 +9,6 @@ router.post('/', TaskValidation, TaskController.create) //rota por onde chegarao
 router.put('/:id', TaskValidation, TaskController.update)
 router.get('/:id', TaskController.show)
 router.get('/filter/all', MacAddressValidation, TaskController.all)
+router.delete('/:id', TaskController.delete)
 
 module.exports = router;
