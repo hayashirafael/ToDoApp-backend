@@ -14,5 +14,6 @@ router.put('/:id/:done', TaskController.done)
 router.get('/filter/late', MacAddressValidation, TaskController.late)
 router.get('/filter/today', MacAddressValidation,TaskController.today)
 router.get('/filter/week', MacAddressValidation, TaskController.week)
+router.get('/filter/month', MacAddressValidation, TaskController.month)
 
 module.exports = router;
