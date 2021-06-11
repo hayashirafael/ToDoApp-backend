@@ -10,5 +10,6 @@ router.put('/:id', TaskValidation, TaskController.update)
 router.get('/:id', TaskController.show)
 router.get('/filter/all', MacAddressValidation, TaskController.all)
 router.delete('/:id', TaskController.delete)
+router.put('/:id/:done', TaskController.done)
 
 module.exports = router;
